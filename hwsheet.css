@@ -12,27 +12,50 @@ body {
 }
 
 div > p:last-of-type {
-  font-size: 21px;
+  font-size: 18px;
   text-align: center;
   font-weight: 400;
   color: hsl(220, 15%, 55%);
-  transform: translateY(-20px);
-  }
+  transform: translateY(-7px);
+  font-family: 'Outfit', sans-serif;
+}
 
-div > p:first-of-type {
-  font-size: 24px;
-  font-weight: 700;
+h6 {
+  font-size: 26px;
   color: hsl(218, 44%, 22%);
   padding: 10px;
   text-align: center;
-  margin-top: 8px;
+  margin: 29px 0 0 0;
+  font-family: 'Outfit', sans-serif;
 }
 
 img {
-  width: 92%;
-  height: 64%;
-  transform: translate(16px, 11px);
+  width: 90%;
+  height: 59%;
+  transform: translate(21px, 22px);
   border-radius: 10px;
+}
+
+.parent {
+  position: relative;
+  width: 600px;
+  height: 670px;
+  margin: 95px auto;
+}
+
+.child {
+  width: 65%;
+  height: 90%;
+  background: hsl(0, 0%, 100%);
+  border-radius: 15px;
+  box-shadow:1px 6px 9px 0px #8c8c8f;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  transform: translate(-50%, -50%);
 }
 
 .parent {
@@ -54,29 +77,4 @@ img {
   top: 50%;
   left: 45%;
   transform: translate(-50%, -50%);
-}
-
-/* .old {
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  height: 100px;
-  width: 100px;
-  background-color: #aaa;
-  font-size: 25px;
-  color: black;
-  outline: 2px solid black;
-}
-*/
-
-.new {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  height: 100px;
-  width: 100px;
-  background-color: #aaa;
-  font-size: 25px;
-  color:black;
-  border: 2px solid black;
 }
